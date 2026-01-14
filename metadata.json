@@ -1,0 +1,5 @@
+{
+  "name": "Lumina: AI-Powered Gallery Carousel",
+  "description": "A high-performance, responsive React gallery with custom carousel and lightbox features, powered by Gemini 2.5 Flash for dynamic AI image generation and curation.",
+  "requestFramePermissions": []
+}
