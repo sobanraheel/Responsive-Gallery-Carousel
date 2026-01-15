@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Carousel from "./components/Carousel";
 import Lightbox from "./components/Lightbox";
 import { GalleryImage, LightboxState, LoadingState } from "./types";
-import { generateGalleryTheme } from "./services/geminiService";
 import { Sparkles, Loader2 } from "./components/Icons";
 
 const INITIAL_IMAGES: GalleryImage[] = [
@@ -74,30 +73,10 @@ const INITIAL_IMAGES: GalleryImage[] = [
 
 const App: React.FC = () => {
   const [images, setImages] = useState<GalleryImage[]>(INITIAL_IMAGES);
-  const [prompt, setPrompt] = useState("");
-  const [loading, setLoading] = useState<LoadingState>(LoadingState.IDLE);
   const [lightbox, setLightbox] = useState<LightboxState>({
     isOpen: false,
     currentIndex: 0,
   });
-
-  const handleGenerate = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!prompt.trim() || loading === LoadingState.GENERATING) return;
-
-    setLoading(LoadingState.GENERATING);
-    try {
-      const newImages = await generateGalleryTheme(prompt);
-      if (newImages.length > 0) {
-        setImages(newImages);
-      }
-      setLoading(LoadingState.IDLE);
-    } catch (error) {
-      console.error(error);
-      setLoading(LoadingState.ERROR);
-      setTimeout(() => setLoading(LoadingState.IDLE), 3000);
-    }
-  };
 
   const openLightbox = (index: number) => {
     setLightbox({ isOpen: true, currentIndex: index });
