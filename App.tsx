@@ -113,10 +113,10 @@ const App: React.FC = () => {
         </div>
         <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-4 bg-gradient-to-br from-white via-white to-gray-600 bg-clip-text text-transparent">
           Carousel
-        </h1>
+        {/* </h1>
         <p className="text-gray-400 text-lg md:text-xl mb-1 max-w-2xl mx-auto font-light leading-relaxed">
           Experience a living gallery.
-        </p>
+        </p> */}
       </header>
 
       {/* Main Content: Carousel */}
