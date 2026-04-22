@@ -109,7 +109,7 @@ const App: React.FC = () => {
       <header className="w-full max-w-4xl px-6 pt-16 pb-4 relative z-10 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6 animate-fade-in">
           <Sparkles className="w-4 h-4" />
-          <span>Best Gallery Carousel</span>
+          <span>Best Responsive Gallery Carousel</span>
         </div>
         <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-4 bg-gradient-to-br from-white via-white to-gray-600 bg-clip-text text-transparent">
           Carousel
@@ -132,7 +132,7 @@ const App: React.FC = () => {
             </div>
             <div className="text-center space-y-2">
               <p className="text-2xl font-bold text-white tracking-tight">
-                Dreaming up your gallery
+                Show up your gallery
               </p>
               <p className="text-gray-500 max-w-md mx-auto leading-relaxed">
                 Gemini is brainstorming 8 cinematic scenes and painting them
