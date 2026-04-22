@@ -134,10 +134,10 @@ const App: React.FC = () => {
               <p className="text-2xl font-bold text-white tracking-tight">
                 Showcase your gallery
               </p>
-              <p className="text-gray-500 max-w-md mx-auto leading-relaxed">
+              {/* <p className="text-gray-500 max-w-md mx-auto leading-relaxed">
                 Gemini is brainstorming 8 cinematic scenes and painting them
                 with light. Please wait a few moments.
-              </p>
+              </p> */}
             </div>
           </div>
         ) : (
